@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '../dist')));
 app.post('/send', function(req, res) {
 
   //mailgun apik
-  var mgKey = process.eng.mg_key;
+  var mgKey = process.env.mg_key;
   console.log(mgKey)
   var domain = 'sandboxc4b09ff7bf6d49738e53add90ddb43a0.mailgun.org';
   var mg = new mailgun({

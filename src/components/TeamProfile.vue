@@ -1,19 +1,27 @@
 <template>
-  <div class="card col-md-6">
-    <div class="container">
-      <div class="col-md-5">
-        <p>image goes here</p>
-      </div>
-      <div class="col-md-7">
-        <h2>{{name}}</h2>
-        <p class="title">{{title}}</p>
+  <div class="col-md-6 card-deck">
+  <div class="card right align">
+    <h5 class="card-header">{{name}}</h5>
+    <div class="card-body">
+      <div class="card-text container">
+        <div class="col-md-6">
+          <p>image goes here</p>
+        </div>
+        <div class="col-md-6">
 
-        <p>{{about}}</p>
-        <p>{{email}}</p>
-        <p><button class="button">Contact</button></p>
+          <p class="title">{{title}}</p>
+
+          <p>{{about}}</p>
+          <p>{{email}}</p>
+        </div>
       </div>
     </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
   </div>
+  </div>
+
 </template>
 
 <script>
@@ -42,10 +50,22 @@ export default {
 <style>
 /* Three columns side by side */
 .container {
-  display: flex
+  display: flex;
+}
+.name {
+  width: auto;
+  position: absolute;
+  height: inherit;
+  color: #D5D5D5;
+  padding-left: 10px
+}
+.namebar {
+  background-color: #6D7993;
+  width: 100%;
+  height: inherit;
 }
 .card {
-  padding: 20px;
+  margin: 10px;
 }
 .button {
     border: none;

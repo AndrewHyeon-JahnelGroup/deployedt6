@@ -1,7 +1,7 @@
 <template>
   <div class="team">
     <h1>Team</h1>
-      <div class="container">
+      <div class="container card-deck">
         <team-profile v-for="item in team"
                       v-bind:name="item.name" :about="item.about" :title="item.title" :email="item.email"/>
       </div>
@@ -57,7 +57,7 @@ export default {
         },
         {
           name: 'Andrew Hyeon',
-          title: 'Software Engineer and Task Monkey',
+          title: 'Head Software Engineer and  Lead Task Monkey',
           about: '',
           email: 'ahyeon@teamsix.us'
         },
@@ -67,7 +67,13 @@ export default {
 }
 </script>
 <style scoped>
+.team {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%
+}
 .container {
+  margin: 10px;
   display: flex;
   width: 100%;
   flex-wrap: wrap
