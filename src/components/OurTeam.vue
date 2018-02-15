@@ -22,13 +22,13 @@ export default {
         {
           name: 'George Bertram',
           title: 'President',
-          about: 'sdfsdd',
+          about: '',
           email: 'gbertram@teamsix.us'
         },
         {
           name: 'Dave Carson',
           title: 'Lead Mechanical Engineer',
-          about: 'sdfdsdfds',
+          about: '',
           email: 'dcarson@teamsix.us'
         },
         {
