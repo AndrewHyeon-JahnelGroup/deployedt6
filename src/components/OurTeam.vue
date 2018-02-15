@@ -44,6 +44,12 @@ export default {
           email: 'dwalker@teamsix.us'
         },
         {
+          name: 'Ken Polley',
+          title: '',
+          about: '',
+          email: 'kpolley@teamsix.us'
+        },
+        {
           name: 'Kathy Roehrich',
           title: 'title',
           about: '',
@@ -54,7 +60,7 @@ export default {
           title: 'Software Engineer and Task Monkey',
           about: '',
           email: 'ahyeon@teamsix.us'
-        }
+        },
       ]
     }
   }
