@@ -17,7 +17,7 @@ Vue.use(VueMaterial);
 Vue.use(VueAxios, axios);
 Vue.use(VueGoogleMaps, {
   load: {
-    key: process.eng.gmaps_key,
+    key: process.env.gmaps_key,
     libraries: 'places', // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     // OR: libraries: 'places,drawing,visualization'
