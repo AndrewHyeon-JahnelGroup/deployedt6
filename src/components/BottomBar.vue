@@ -1,25 +1,12 @@
 <template>
-  <div class="frontpage">
-    <div class="col">
-      <h1 class="abt">{{ msg }}</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-12" id="about">
-        <p>{{ content }}</p>
-      </div>
-    </div>
-    <div class = "loadercontainer">
-    <div class="loader">
-      <div id="largeBox"></div>
-      <div id="smallBox"></div>
-    </div>
-  </div>
+  <div class="bottom">
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AboutPage',
+  name: 'BottomBar',
   data () {
     return {
       msg: 'About',
@@ -29,18 +16,10 @@ export default {
 }
 </script>
 
-<style>
-.frontpage {
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+<style scoped>
+.bottom {
+  width: 100%;
+  height: 300px;
+  background-color: grey;
 }
-.abt {
-  text-align: center
-}
-#about {
-  width: 80%;
-  text-align: center;
-}
-
 </style>

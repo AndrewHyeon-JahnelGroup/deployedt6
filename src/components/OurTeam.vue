@@ -1,32 +1,69 @@
 <template>
-  <div class="frontpage">
-    <h1>team</h1>
-    <ul id="teamlist">
-      <li v-for="item in team">
-        {{ item }}
-      </li>
-    </ul>
-    <div class = "loadercontainer">
-    <div class="loader">
-      <div id="largeBox"></div>
-      <div id="smallBox"></div>
-    </div>
-  </div>
+  <div class="team">
+    <h1>Team</h1>
+      <div class="container">
+        <team-profile v-for="item in team"
+                      v-bind:name="item.name" :about="item.about" :title="item.title" :email="item.email"/>
+      </div>
   </div>
 </template>
 
 <script>
+import TeamProfile from './TeamProfile'
+
 export default {
   name: 'AboutPage',
+  components: {
+    TeamProfile
+  },
   data () {
     return {
       team: [
-        'team member 1',
-        'team member 2',
-        'team member 3',
-        'team member 4'
+        {
+          name: 'George Bertram',
+          title: 'President',
+          about: 'sdfsdd',
+          email: 'gbertram@teamsix.us'
+        },
+        {
+          name: 'Dave Carson',
+          title: 'Lead Mechanical Engineer',
+          about: 'sdfdsdfds',
+          email: 'dcarson@teamsix.us'
+        },
+        {
+          name: 'Mark Salerno',
+          title: 'Design Director',
+          about: 'Super Genius Extraordinaire, Master of Technology and Innovation, Master of the Impossible',
+          email: 'msalerno@teamsix.us'
+        },
+        {
+          name: 'Doug Walker',
+          title: 'Mechanical Engineer',
+          about: 'Doug Walker has degrees in Mechanical Engineering from MIT and the University of Michigan. He has 22 years of experience in machine design, mechanism design, and product development.',
+          email: 'dwalker@teamsix.us'
+        },
+        {
+          name: 'Kathy Roehrich',
+          title: 'title',
+          about: '',
+          email: 'kreohrich@teamsix.us'
+        },
+        {
+          name: 'Andrew Hyeon',
+          title: 'Software Engineer and Task Monkey',
+          about: '',
+          email: 'ahyeon@teamsix.us'
+        }
       ]
     }
   }
 }
 </script>
+<style scoped>
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap
+}
+</style>
