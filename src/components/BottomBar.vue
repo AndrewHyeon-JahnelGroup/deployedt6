@@ -26,7 +26,6 @@
       <h4>Contact</h4>
       <p>Phone number: (203)226-1391 <br />
          Email: gbertram@teamsix.us <br />
-         Fax: <br />
          Hours: Monday-Friday 8:30AM  to 5:00PM ET
       </p>
 
