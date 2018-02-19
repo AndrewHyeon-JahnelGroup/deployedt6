@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-      <div class="col-md-4">
+      <div class="">
         <md-dialog :md-active.sync="showDialog">
           <div class="contact-modal">
             <md-dialog-title>Contact Us</md-dialog-title>
@@ -13,8 +13,8 @@
         </md-dialog>
       </div>
 
-      <div class="col-md-4">
-        <md-button class="md-primary md-raised" @click="showDialog = true">Contact Us</md-button>
+      <div class="text-right">
+        <md-button class="md-flat md-primary" @click="showDialog = true">Contact</md-button>
       </div>
 
       <div class="col-md-4">

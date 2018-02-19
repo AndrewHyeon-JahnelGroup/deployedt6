@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+      <email-modal />
     </div>
   </div>
   </div>
@@ -25,8 +25,13 @@
 </template>
 
 <script>
+import EmailModal from './EmailModal'
+
 export default {
   name: 'TeamProfile',
+  components: {
+    EmailModal
+  },
   props: ['name', 'about', 'title', 'email'],
   methods: {
     sendEmail: async function sendEmail() {
@@ -81,5 +86,11 @@ export default {
 
 .button:hover {
     background-color: #555;
+}
+
+.card-footer {
+  padding: 5px;
+  padding-left: 20px;
+
 }
 </style>
