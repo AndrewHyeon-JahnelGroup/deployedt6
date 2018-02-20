@@ -1,11 +1,11 @@
 <template>
   <div class="col-md-6 card-deck">
-  <div class="card right align">
+  <div class="card profile">
     <h5 class="card-header">{{name}}</h5>
     <div class="card-body">
       <div class="card-text container">
         <div class="col-md-6">
-          <p>image goes here</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFGhaIPwHSHJBpk3l4ZfQDi5KogibX0_tuVAstc7-bMoiiJxB">
         </div>
         <div class="col-md-6">
 
@@ -71,6 +71,7 @@ export default {
 }
 .card {
   margin: 10px;
+  min-width: 100%;
 }
 .button {
     border: none;
