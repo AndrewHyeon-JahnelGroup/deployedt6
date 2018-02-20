@@ -34,16 +34,7 @@
       <p>content</p>
 
     </div>
-    <div class="col-md-4 location">
-      <h4>header</h4>
-      <p>content</p>
 
-    </div>
-    <div class="col-md-4 location">
-      <h4>header</h4>
-      <p>content</p>
-
-    </div>
   </div>
 </template>
 

@@ -5,7 +5,7 @@
         <br />
         <h3>Who we are</h3>
         <br />
-        <div class="mission">
+        <div class="mission1">
           <p>{{ content }}</p>
         </div>
       </div>
@@ -85,11 +85,15 @@ export default {
 }
 
 .content{
+
   text-align: center
 }
 #about {
   width: 80%;
   text-align: center;
+}
+
+.mission1 {
 }
 
 </style>
